@@ -1,0 +1,19 @@
+<header class="container-header">
+  <div class="container-controls">
+    <div class="control">
+      <img src="../../../assets/icon-menu.png" alt="Toggle Menu" width="50px" (click)="toggleMenu()">
+    </div>
+    <div class="btn-controls">
+      <h1>Cidade</h1>
+    </div>
+    <div class="btn-controls">
+      <h1>Escritório</h1>
+    </div>
+    <div class="btn-controls">
+      <h1>At</h1>
+    </div>
+    <div class="btn-controls" *ngIf="qualidade">
+      <h1>Ténicos</h1>
+    </div>
+  </div>
+</header>
