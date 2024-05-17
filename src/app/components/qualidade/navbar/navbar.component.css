@@ -1,0 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=Reddit+Mono:wght@200..900');
+.container-navbar {
+    display: flex;
+    padding: 30px;
+    background-color: #3c1361;
+    color: #fff;
+    flex-direction: column;
+}
+
+.container-navbar > div {
+  display: flex;
+}
+
+.container-navbar > div {
+    display: flex;
+    gap: 15px;
+    padding: 30px;
+    font-family: "K2D", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 18px;
+}
+
+.container-navbar > div > a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.container-navbar > div > a:hover {
+  text-decoration: underline;
+}

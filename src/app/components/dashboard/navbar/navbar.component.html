@@ -1,0 +1,37 @@
+<nav class="container-navbar">
+  <div *ngIf="visionIn" class="menu-icon" (click)="visionMenu()">
+    <div></div>
+    <div></div>
+    <div></div>
+  </div>
+  <ul *ngIf="!visionIn">
+      <div class="menu-icon-close" (click)="visionMenu()">
+        <div style="position: absolute;z-index: 1;transform: rotate(45deg);"></div>
+        <div style="transform: rotate(-45deg);"></div>
+      </div>
+      <li class="container-ilhas" (click)="toggle(1)">Qualidade
+      </li>
+      <ul class="subdatas" *ngIf="validadorQualidade">
+          <li>&#x2022; Ifi</li>
+          <li>&#x2022; Irr</li>
+          <li>&#x2022; Irt</li>
+      </ul>
+      <li class="container-ilhas" (click)="toggle(2)">Produção
+      </li>
+      <ul class="subdatas" *ngIf="validadorProducao">
+          <li>&#x2022; Reparo</li>
+          <li>&#x2022; Alta</li>
+          <li>&#x2022; Me</li>
+          <li>&#x2022; Serviços</li>
+      </ul>
+      <li class="container-ilhas" (click)="toggle(3)">Rede Externa</li>
+      <ul class="subdatas" *ngIf="validadorRedeExterna">
+        <li>&#x2022; P.O Premium</li>
+        <li>&#x2022; P.O Massivo</li>
+        <li>&#x2022; IRR Elementos de Rede</li>
+        <li>&#x2022; IRR MAX3 de Rede</li>
+        <li>&#x2022; IRR Grupo Gerador Massiva X Massiva</li>
+    </ul>
+  </ul>
+  <app-cards style="width: 100%;"></app-cards>
+</nav>

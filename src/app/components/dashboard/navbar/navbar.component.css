@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Reddit+Mono:wght@200..900');
+.container-navbar {
+    display: flex;
+    gap: 50px;
+    padding: 30px;
+    background-color: #3c1361;
+    color: #fff;
+    flex-wrap: wrap;
+}
+
+.menu-icon, .menu-icon-close {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.menu-icon > div, .menu-icon-close > div {
+  width: 30px;
+  height: 7px;
+  background: #fff;
+}
+
+.container-navbar > ul {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding: 30px;
+    border: 1px solid #fff;
+    border-radius: 7px;
+    font-family: "K2D", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 20px;
+    width: 100%;
+}
+
+.container-navbar > ul > li {
+  padding: 10px;
+  border: 1px solid #fff;
+  border-radius: 7px;
+}
+
+.container-navbar > ul > li > a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.container-ilhas:hover, .subdatas > li:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.subdatas {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 10px 0 10px 10px;
+  font-size: 15px;
+  text-transform: uppercase;
+}
